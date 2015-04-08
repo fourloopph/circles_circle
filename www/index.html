@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-		<title></title>
 
-		<link href="lib/ionic/css/ionic.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+        <link href="css/ionic.app.css" rel="stylesheet">
+        -->
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+</head>
 
-		<!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-		<link href="css/ionic.app.css" rel="stylesheet">
-		-->
+<body ng-app="starter" ng-controller="CircleCTRL">
+    <ion-pane>
+        <ion-header-bar class="bar-positive">
+            <h1 class="title">Ionic Blank Starter</h1>
+        </ion-header-bar>
+        <ion-content>
+            <ion-refresher pulling-text="Pull to refresh..." on-refresh="doRefresh()">
+            </ion-refresher>
+            <div id="parentdiv"></div>
+        </ion-content>
+        <div class="bar bar-footer bar-positive">
+            <a ng-click="addMore()" class="button button-icon icon ion-plus"> Add</a>
+            <h1 class="title"></h1>
+            <a ng-click="doRefresh()" class="button button-icon icon ion-close"> Clear</a>
+        </div>
+    </ion-pane>
+</body>
 
-		<!-- ionic/angularjs js -->
-		<script src="lib/ionic/js/ionic.bundle.js"></script>
-
-		<!-- cordova script (this will be a 404 during development) -->
-		<script src="cordova.js"></script>
-
-		<!-- your app's js -->
-		<script src="js/app.js"></script>
-	</head>
-	<body ng-app="starter" ng-controller="CircleCTRL">
-
-		<ion-pane>
-			<ion-header-bar class="bar-stable">
-				<h1 class="title">Ionic Blank Starter</h1>
-			</ion-header-bar>
-			<ion-content>
-					<div id="figure" class="circle big" data-ng-style="innerCircle">
-						<div class="outtercircle one" data-ng-style="outerCircle"></div>
-						<div class="outtercircle two" data-ng-style="outerCircle"></div>
-                        <div class="outtercircle three" data-ng-style="outerCircle"></div>
-						<div class="outtercircle four" data-ng-style="outerCircle"></div>
-                        <div class="outtercircle five" data-ng-style="outerCircle"></div>
-						<div class="outtercircle six" data-ng-style="outerCircle"></div>
-                        <div class="outtercircle seven" data-ng-style="outerCircle"></div>
-                        <div class="outtercircle eight" data-ng-style="outerCircle"></div>
-					</div>
-			</ion-content>
-		</ion-pane>
-	</body>
 </html>
