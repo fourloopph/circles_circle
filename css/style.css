@@ -1,0 +1,96 @@
+/* Empty. Add your own CSS if you like */
+
+#figure {
+    padding-top: 100px;
+}
+/*.circle {
+    width:30%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding: 10px;
+    display: inline-block;
+    position: absolute;
+}*/
+
+.circle:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background: #4679BD;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.outtercircle:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background: black;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+.one {
+    left: 50px;
+    top: 40px;
+}
+
+.two {
+    right: -25px;
+    top: 75px;
+}
+
+.three {
+    right: -60px;
+    top: 150px;
+}
+
+.four {
+    right: -25px;
+    bottom: -25px;
+}
+
+.five {
+    bottom: -60px;
+    left: 50px;
+}
+
+.six {
+    left: -25px;
+    bottom: -25px;
+}
+
+.seven {
+    left: -60px;
+    top: 150px;
+}
+
+.eight {
+    left: -25px;
+    top: 75px;
+}
+
+#parentdiv {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #ac5;
+    border-radius: 150px;
+    margin: 0 auto;
+    top: 137px;
+}
+
+.div2 {
+    position: absolute;
+    background-color: #ef4e3a;
+    border-radius: 100px;
+}
